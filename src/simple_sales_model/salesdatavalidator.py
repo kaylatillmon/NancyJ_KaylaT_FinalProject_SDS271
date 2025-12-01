@@ -18,7 +18,7 @@ class SalesData:
             print("Predictor variable is not numeric, predictor variable must be numeric")
         
         """Get the names of all numerical variables in the data frame and stores it in a new variable"""
-        numeric_column_names = self.data.self_dtypes(include = "number").columns.tolist()
+        numeric_column_names = self.data.select_dtypes(include = "number").columns.tolist()
         
         """Removes the predictor variable from the numeric variable column"""
 
