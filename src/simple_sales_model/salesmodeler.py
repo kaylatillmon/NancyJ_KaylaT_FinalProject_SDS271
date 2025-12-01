@@ -35,7 +35,7 @@ class SalesModeler:
         rows = []
 
         for outcome, params in self.models.items():
-            row = {"outcome": outcome, "slope": params["slope"], "intercept": params["intercept"], "R^2": params["r2"]}
+            row = {"outcome": outcome, "slope": params["slope"], "intercept": params["intercept"], "R^2": params["R^2"]}
 
             rows.append(row)
         

@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/simple_sales_model/__init__.py
+src/simple_sales_model/salesdatavalidator.py
+src/simple_sales_model/salesmodeler.py
+src/simple_sales_model/test.py
+src/simple_sales_model.egg-info/PKG-INFO
+src/simple_sales_model.egg-info/SOURCES.txt
+src/simple_sales_model.egg-info/dependency_links.txt
+src/simple_sales_model.egg-info/top_level.txt
+tests/test_salesdata.py
+tests/test_salesmodeler.py
