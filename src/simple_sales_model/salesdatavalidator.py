@@ -43,7 +43,7 @@ class SalesData:
         return self.outcome
     
     def summary_stats(self):
-        """ Returns a "concatenated version of our predictor column and our outcome variable dataframe to return the summary statistics of them"""
+        """ Returns a concatenated version of our predictor column and our outcome variable dataframe to return the summary statistics of them"""
         concat_dataframe = pd.concat([self.predictor, self.outcome], axis = 1)
 
         return concat_dataframe.describe()

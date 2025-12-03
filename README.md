@@ -1,1 +1,3 @@
+`simple-sales-model` is a small package designed to automate the process of building simple linear regression models, specifically for sales data. It allows users to explore a sales data set quickly and see if a numeric predictor has a relationship with different numeric outcome variables. 
 
+The goal of the `simple-sales-model` package is to offer a beginner friendly tool for generating preliminary linear regression models of the numerical sales data. It is for analysts, students, and beginner-coders that want a fast way to compare variables from a sales data set to establish preliminary patterns. It is a good first step before designing more complex models. 
