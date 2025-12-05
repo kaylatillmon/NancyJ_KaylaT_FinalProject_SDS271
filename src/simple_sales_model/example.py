@@ -1,5 +1,4 @@
 # To start, you must import pandas and import SalesData and SalesModeler from their respective files.
-#test push
 import pandas as pd
 from salesdatavalidator import SalesData
 from salesmodeler import SalesModeler
