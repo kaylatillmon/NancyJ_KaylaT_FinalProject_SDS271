@@ -4,6 +4,18 @@ class SalesData:
     """A class used for validating and storing Sales data"""
 
     def __init__(self, data, predictor_variable):
+        """ 
+        This function initilizes the class with a provided dataset and user-chosen predictor variable. 
+
+        Parameters:
+            data (pandas.DataFrame): The provided data set that the function will use its variables for modeling and/or analysis.
+            predictor_variable (str): The user-chosen variable that will serve as a predictor for following modeling and/or analysis.
+
+        Attributes:
+            data (pandas.DataFrame): Function stores inputed dataset. 
+            predictor_variable (str): Function stores predictor variable.
+            outcome_variables(str or None): Empty variable, placeholder.
+        """
         self.data = data
         self.predictor_variable = predictor_variable
         
