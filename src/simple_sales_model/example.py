@@ -15,10 +15,10 @@ df = pd.DataFrame({
 
 sd = SalesData(df, predictor_variable="discount")
 
-# You then call column validator on your object. This method validates your drata frame by making sure your predictor variable is numerical, 
+# You then call column validator on your object. This method validates your data frame by making sure your predictor variable is numerical, 
 # and finding all other numerical columns, then removing your predictor from that.
 
-print(sd.column_validator())
+sd.column_validator()
 
 #This returns your predictor column
 print(sd.get_predictor())
@@ -41,6 +41,6 @@ print(models.fit_all())
 print(models.get_model_parameters("revenue"))
 print(models.get_model_parameters("profit"))
 
-#To get a prettier/easier way to read the models you can create another object that calls your specifed model object and call the summary_stats_table() method.
+#To get a prettier/easier way to read the models you can create another object that calls your specified model object and call the summary_stats_table() method.
 summary = models.summary_stats_table()
 print(summary)
