@@ -1,5 +1,5 @@
-# To start, you must import pandas and import SalesData and SalesModeler from their respective files
-
+#INSTRUCTIONS + EXAMPLE
+# To start, you must import pandas and import SalesData and SalesModeler from their respective files.
 import pandas as pd
 from salesdatavalidator import SalesData
 from salesmodeler import SalesModeler
