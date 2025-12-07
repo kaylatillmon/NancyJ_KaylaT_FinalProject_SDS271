@@ -41,9 +41,11 @@ class SalesData:
         """
         if self.predictor_variable not in self.data.columns:
             print("Predictor column", {self.predictor_variable}, " does not exist in this data frame.")
+            return
 
         if pd.api.types.is_numeric_dtype(self.data[self.predictor_variable]) == False:
             print("Predictor variable is not numeric, predictor variable must be numeric")
+            return
         
         """Get the names of all numerical variables in the data frame and stores it in a new variable"""
         numeric_column_names = self.data.select_dtypes(include = "number").columns.tolist()
@@ -56,6 +58,7 @@ class SalesData:
         """Checks if there are numeric variables other than the predictor variable"""
         if len(numeric_column_names) == 0:
             print("No numeric columns found, data must have numerical data")
+            return
 
         self.outcome_variable = numeric_column_names
         self.predictor = self.data[self.predictor_variable]
