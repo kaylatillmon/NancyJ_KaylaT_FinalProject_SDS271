@@ -2,6 +2,16 @@ import pandas as pd
 from simple_sales_model.salesdatavalidator import SalesData
 
 def test_SalesDataandMethods():
+    """
+    Tests the class SalesData.
+
+    Attributes:
+        SalesData (object): Tests that the object can be made with the imputed predictor variable and the user given data.
+        column_validator() (func): Tests that the numeric outcome variables are correctly identified and validated.
+        get_predictor() (func): Tests that the correct predictor data is returned. 
+        get_outcome() (func): Tests that a DataFrame is returned containing only outcome variables. 
+        summary_stats() (func): Tests that a DataFrame is returned with accurate summary statistics.
+    """
     sales = pd.DataFrame({"amount_ordered": [5, 10, 15], "revenue": [100, 200, 300], "profit": [300, 600, 900], "product_type": ["lip gloss", "blush", "mascara"]})
     
     #creates object, chooses predictor variable , validates columns and sets them up for modeling
