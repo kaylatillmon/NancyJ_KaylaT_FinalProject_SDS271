@@ -3,6 +3,11 @@ from simple_sales_model.salesdatavalidator import SalesData
 import pandas as pd
 
 def test_SalesModelerandMethods():
+    """
+    Tests SalesData and SalesModler classes.
+
+    
+    """
     sales = pd.DataFrame({"amount_ordered": [5, 10, 15], "revenue": [100, 200, 300], "profit": [300, 600, 900], "product_type": ["lip gloss", "blush", "mascara"]})
 
     data = SalesData(sales, predictor_variable = "amount_ordered")
